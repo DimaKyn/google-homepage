@@ -29,11 +29,14 @@
         width: 140px;
         padding: 7px 4px 7px 4px;
         margin: 5px;
-        background-color:rgb(240, 240, 240);
-        color:rgb(46, 46, 46);
+        background-color:rgb(250, 250, 250);
+        color:rgb(61, 61, 61);
         border-style:unset;
         border-radius: 3px;
         cursor:pointer;
+    }
+    .btn-style:hover {
+        box-shadow:1px 1px 3px 1px rgb(216, 216, 216);
     }
     .button-align {
         text-align: center;
@@ -42,29 +45,39 @@
   
     }
     .navbar {
-        display:flex;
-    
+        align-items: flex-end;
     }
     .navbar-links {
         margin: 20px;
     }
-
+    .rights {
+        margin: 110% 0% 0% 85%;
+    }
+    .image {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
 </style>
 
 <html>
-    <head></head>
-    <ul class="navbar">
-        <li class="navbar-links"><a href="https://www.gmail.com">Gmail</a></li>
-        <li class="navbar-links"><a href="">Images</a></li>
-        <li class="navbar-links"><a href="">
-                <img src="/home/dima/Desktop/the_odin_project/google-homepage/outline_apps_black_24dp.png"/>
-            </a>
-        </li>
-        <li class="navbar-links"<img href=""></a></li>
-    </ul>
-    <body>
-        <div>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
+    <head></head>
+    <body>
+    <ul class="navbar">
+        <p class="navbar-links"><a href="https://www.gmail.com">Gmail</a></p>
+        <p class="navbar-links"><a href="">Images</a></p>
+        <p class="navbar-links"><a href="" color="black">
+            <span class="material-icons">apps</span>
+            </a>
+        </p>
+        <p class="navbar-links"><a href="https://www.youtube.com/watch?v=W6oQUDFV2C0"><img src="index.jpeg" alt="DimaKyn" class="image"><a></p>
+    </ul>
+        <div>
+            
         </div>
         <div> 
         <img src="googlelogo_color_272x92dp.png" alt="The google logo" class="logo">
@@ -73,9 +86,9 @@
             <input type="text" class="search-style">
         </div>
         <div class="button-align">
-            <button class="btn-style">Google Search</button>
+            <button class="btn-style"><a href="https://www.youtube.com/watch?v=O91DT1pR1ew">Google Search</a></button>
             <button class="btn-style">I'm Feeling Lucky</button>
         </div>
-
+        <div class="rights">Dima Kyn Incorporated©</div>
     </body>
 </html>
