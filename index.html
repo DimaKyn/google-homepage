@@ -1,11 +1,17 @@
 <style>
     .logo {
         display:block;
-        margin-top: 20%;
+        margin-top: 10%;
         margin-left: auto;
         margin-right:auto;
     }
     .search-style {
+        font-family:monospace;
+        background: url(outline_search_black_24dp.png);
+        background-repeat:no-repeat;
+        background-position:left;
+        background-position-x: 12px;
+        padding-left:40px;
         margin-top:15px;
         display:block;
         margin-right: auto;
@@ -45,10 +51,32 @@
   
     }
     .navbar {
-        align-items: flex-end;
+        text-align: right;
+        list-style-type: none;
+        margin-right:20px;
+        color:gray;
+        text-decoration: none;
     }
     .navbar-links {
+        display:inline;
         margin: 20px;
+    }
+    .navbar:link, .navbar:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .navbar:visited {
+        color:gray;
+    }
+    .navbar-links:visited {
+        color: #b9b9b9;
+    }
+    .navbar-links:hover {
+        box-shadow:5px 5px 5px 5px rgb(0, 0, 0);
     }
     .rights {
         margin: 110% 0% 0% 85%;
@@ -59,36 +87,52 @@
         object-fit: cover;
         border-radius: 20px;
     }
+    .text-language {
+        font-family: 'STIX Two Text', serif;
+        color:rgb(61, 61, 61);
+        font-size: 14px;
+        text-align: center;
+    }
+    #small-text {
+        color: gray;
+        font-size: 12px;
+    }
+    input {
+        outline:none;
+    }
+    input[type=search] {
+        -webkit-apparence: textfield;
+        -webkit-box-sizing: content-box;
+        font-family:inherit;
+        font-size:100%
+    }
 </style>
 
 <html>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap" rel="stylesheet"> 
 
     <head></head>
     <body>
-    <ul class="navbar">
-        <p class="navbar-links"><a href="https://www.gmail.com">Gmail</a></p>
-        <p class="navbar-links"><a href="">Images</a></p>
-        <p class="navbar-links"><a href="" color="black">
-            <span class="material-icons">apps</span>
-            </a>
-        </p>
-        <p class="navbar-links"><a href="https://www.youtube.com/watch?v=W6oQUDFV2C0"><img src="index.jpeg" alt="DimaKyn" class="image"><a></p>
-    </ul>
-        <div>
-            
-        </div>
+    <div class="navbar">
+        <a href="https://www.gmail.com">Gmail</a>
+        <a href="">Images</a>
+        <a href="" color="black"><span class="material-icons">apps</span></a>
+        <a href="https://www.youtube.com/watch?v=W6oQUDFV2C0"><img src="g-icon-google-2015-symbol-circle-logo.jpg" alt="DimaKyn" class="image"><a>
+    </div>
         <div> 
-        <img src="googlelogo_color_272x92dp.png" alt="The google logo" class="logo">
+        <a href="http://127.0.0.1:5500/index.html"><img src="googlelogo_color_272x92dp.png" alt="The google logo" class="logo"></a>
         </div>
         <div>
-            <input type="text" class="search-style">
+            <input type="search" class="search-style">
         </div>
         <div class="button-align">
-            <button class="btn-style"><a href="https://www.youtube.com/watch?v=O91DT1pR1ew">Google Search</a></button>
+            <button class="btn-style">Google Search</button>
             <button class="btn-style">I'm Feeling Lucky</button>
         </div>
-        <div class="rights">Dima Kyn Incorporated©</div>
+        <p class="text-language">Google offered in : <a href="">   עברית</a> <a href="">العربية</a></p>
     </body>
 </html>
