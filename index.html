@@ -4,7 +4,7 @@
     }
     .logo {
         display:block;
-        margin-top: 10%;
+        margin-top: 25%;
         margin-left: auto;
         margin-right:auto;
     }
@@ -78,7 +78,7 @@
     #g:hover {
         
         border-radius:100%;
-        background-size: 80%;
+        background-size: 150%;
         background-color:rgb(241, 241, 241);
         
     }
@@ -88,7 +88,29 @@
     }
 
     .navbar-links {
-        font-size: 14px;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:rgba(0, 0, 0, 0.87);
+        text-decoration:none;
+        margin: 3px;
+        text-align:justify;
+
+    }
+    .navbar:visited {
+        color:rgba(0, 0, 0, 0.87);
+    }
+    .navbar-links:visited {
+        color:rgba(0, 0, 0, 0.87);
+    }
+    .navbar-links:hover {
+        text-decoration:underline;
+        
+    }
+
+
+
+    .navbar-links2 {
+        font-size: 12px;
         font-family: Arial, Helvetica, sans-serif;
         color: rgb(0,0,0);
         text-decoration:none;
@@ -96,26 +118,14 @@
         text-align:justify;
 
     }
-    .navbar:visited {
-        color: rgb(0,0,0);
-    }
-    .navbar-links:visited {
-        color: rgb(0,0,0);
-    }
-    .navbar-links:hover {
-        text-decoration:underline;
-    }
-    .rights {
-        margin: 110% 0% 0% 85%;
-    }
-    .image {
-        width: 40px;
-        height: 40px;
-        object-fit: cover;
+    .navbar-links2:hover {
         border-radius: 100%;
+        border-width: 3px;
+        background-color:rgb(241, 241, 241);
     }
-    .image2 {
-        justify-content: flex-start;
+    
+
+    .image {
         width: 40px;
         height: 40px;
         object-fit: cover;
@@ -136,10 +146,6 @@
         font-size: 14px;
         text-align: center;
     }
-    #small-text {
-        color: gray;
-        font-size: 12px;
-    }
     input {
         outline:none;
     }
@@ -150,16 +156,53 @@
         font-size:100%
     }
     .bottom-nav {
-        height:50%;
-        width:50%;
+        font-family: Arial, Helvetica, sans-serif;
+        color:rgba(0, 0, 0, 0.5);
+        background-color:rgb(230, 230, 230);
+        width:100%;
+        list-style: none;
+        text-decoration: none;
+        position:fixed;
+      
+        bottom:0;
+        display:inline-block;  
+        height:3%;
+
+    }
+    .bottom-nav a {
+        text-decoration:none;
+    }
+    .bottom-nav ul { 
+        list-style-type: none;
+        padding-left:150px;
+    }
+
+    .bottom-nav li { 
+        float:left;
+        padding-left:25px;
+        color:rgba(201, 201, 201, 0.5);
+    }
+
+    .bottom-nav:visited {
+        text-decoration: none;
+        color:rgba(204, 204, 204, 0.5);
         
-        justify-content:right;
+    }
+    .bottom-nav a:visited{
+        
+        display:block;
+        text-align:center;
+        color:rgba(102, 102, 102, 0.5);
+        text-decoration:none;
+    }
+    .bottom-nav a:hover{
+        text-decoration:underline;
     }
     .material-icons {
         vertical-align: baseline;
         text-align: center;
         justify-content: center;
-        color:rgba(0, 0, 0, 0.87);
+        color:rgba(0, 0, 0, 0.5);
     }
 
 
@@ -177,8 +220,8 @@
     <ul class="navbar">
         <li><a class ="navbar-links" href="https://www.gmail.com">Gmail</a></li>
         <li class="navbar-links"><a class ="navbar-links" href="">Images</a></li>
-        <li class="image"><a style="justify-content: center;" href="" color="black"><i class="material-icons" >apps</i></a></li>
-        <li id="g"><a href="https://www.youtube.com/watch?v=W6oQUDFV2C0"><img src="g-icon-google-2015-symbol-circle-logo.jpg" alt="DimaKyn" class="image" ></a></li>
+        <li class="navbar-links2"><a style="justify-content: center;" href="" color="black"><i class="material-icons" >apps</i></a></li>
+        <li class="navbar-links2" ><a  href="https://www.youtube.com/watch?v=W6oQUDFV2C0"><img id="g" src="g-icon-google-2015-symbol-circle-logo.jpg" alt="DimaKyn" class="image" ></a></li>
         </ul>
     <div>
         <div> 
@@ -191,18 +234,18 @@
             <button class="btn-style">Google Search</button>
             <button class="btn-style">I'm Feeling Lucky</button>
         </div>
-        <p class="text-language">Google offered in : <a href="">   עברית</a> <a href="">العربية</a></p>
     </div>
     <div class="bottom-nav">
         <ul >
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Advertising</a></li>
+            <li><a href="">Business</a></li>
+            <li><a href="">How Search Works</a></li>
+        </ul>
+        <ul>
+            <li><a  href=""></a></li>
+            <li><a  href=""></a></li>
+            <li><a  href=""></a></li>
         </ul>
     </div>
     </body>
