@@ -1,4 +1,7 @@
 <style>
+    .body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
     .logo {
         display:block;
         margin-top: 10%;
@@ -6,7 +9,7 @@
         margin-right:auto;
     }
     .search-style {
-        font-family:monospace;
+        font-family:Arial, Helvetica, sans-serif;
         background: url(outline_search_black_24dp.png);
         background-repeat:no-repeat;
         background-position:left;
@@ -51,32 +54,56 @@
   
     }
     .navbar {
-        text-align: right;
-        list-style-type: none;
-        margin-right:20px;
+        position:absolute;
+        top:0;
+        right:0;
+        border:0;
+        display:inline-flex;
+        width:100%;
+        justify-content: flex-end;
+        box-sizing:border-box;
+        list-style: none;
+        
         color:gray;
         text-decoration: none;
+        align-items: center;
+
     }
-    .navbar-links {
+    .navbar li {
+        float:left;
         display:inline;
-        margin: 20px;
+        text-align: right;
+        align-items: center;
     }
-    .navbar:link, .navbar:visited {
-        background-color: #f44336;
-        color: white;
-        padding: 15px 25px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
+    #g:hover {
+        
+        border-radius:100%;
+        background-size: 80%;
+        background-color:rgb(241, 241, 241);
+        
+    }
+    .navbar a {
+        display:block;
+        padding:10px;
+    }
+
+    .navbar-links {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0,0,0);
+        text-decoration:none;
+        margin: 3px;
+        text-align:justify;
+
     }
     .navbar:visited {
-        color:gray;
+        color: rgb(0,0,0);
     }
     .navbar-links:visited {
-        color: #b9b9b9;
+        color: rgb(0,0,0);
     }
     .navbar-links:hover {
-        box-shadow:5px 5px 5px 5px rgb(0, 0, 0);
+        text-decoration:underline;
     }
     .rights {
         margin: 110% 0% 0% 85%;
@@ -85,11 +112,27 @@
         width: 40px;
         height: 40px;
         object-fit: cover;
-        border-radius: 20px;
+        border-radius: 100%;
+    }
+    .image2 {
+        justify-content: flex-start;
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+    .image:hover {
+        background-size: 100%;
+        background-color:rgb(241, 241, 241);
+        
+    }
+    .image2:hover {
+        background-size: 100%;
+        background-color:rgb(241, 241, 241);
     }
     .text-language {
         font-family: 'STIX Two Text', serif;
-        color:rgb(61, 61, 61);
+        color:rgba(0, 0, 0, 0.87);
         font-size: 14px;
         text-align: center;
     }
@@ -103,10 +146,24 @@
     input[type=search] {
         -webkit-apparence: textfield;
         -webkit-box-sizing: content-box;
-        font-family:inherit;
+        font-family:Arial, Helvetica, sans-serif;
         font-size:100%
     }
-</style>
+    .bottom-nav {
+        height:50%;
+        width:50%;
+        
+        justify-content:right;
+    }
+    .material-icons {
+        vertical-align: baseline;
+        text-align: center;
+        justify-content: center;
+        color:rgba(0, 0, 0, 0.87);
+    }
+
+
+</style></li>
 
 <html>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -117,12 +174,13 @@
 
     <head></head>
     <body>
-    <div class="navbar">
-        <a href="https://www.gmail.com">Gmail</a>
-        <a href="">Images</a>
-        <a href="" color="black"><span class="material-icons">apps</span></a>
-        <a href="https://www.youtube.com/watch?v=W6oQUDFV2C0"><img src="g-icon-google-2015-symbol-circle-logo.jpg" alt="DimaKyn" class="image"><a>
-    </div>
+    <ul class="navbar">
+        <li><a class ="navbar-links" href="https://www.gmail.com">Gmail</a></li>
+        <li class="navbar-links"><a class ="navbar-links" href="">Images</a></li>
+        <li class="image"><a style="justify-content: center;" href="" color="black"><i class="material-icons" >apps</i></a></li>
+        <li id="g"><a href="https://www.youtube.com/watch?v=W6oQUDFV2C0"><img src="g-icon-google-2015-symbol-circle-logo.jpg" alt="DimaKyn" class="image" ></a></li>
+        </ul>
+    <div>
         <div> 
         <a href="http://127.0.0.1:5500/index.html"><img src="googlelogo_color_272x92dp.png" alt="The google logo" class="logo"></a>
         </div>
@@ -134,5 +192,18 @@
             <button class="btn-style">I'm Feeling Lucky</button>
         </div>
         <p class="text-language">Google offered in : <a href="">   עברית</a> <a href="">العربية</a></p>
+    </div>
+    <div class="bottom-nav">
+        <ul >
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
     </body>
 </html>
